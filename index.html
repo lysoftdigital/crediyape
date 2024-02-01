@@ -19,7 +19,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -30,10 +30,51 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        .seguro-color {
-    color: #EDC44F;
+        .custom-zoomIn {
+    animation-name: custom-zoomIn;
+    animation-duration: 1s; /* Duración de la animación */
+    animation-fill-mode: both;
 }
 
+@keyframes custom-zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+        .custom-blue-bg {
+    background-color: #043263; /* Puedes ajustar el tono de azul según tus preferencias */
+}
+
+        .custom-blue-btn {
+    background-color:#043263; /* Puedes ajustar el tono de azul según tus preferencias */
+    border-color:#043263; /* Color del borde */
+    color: white; /* Color del texto */
+}
+
+.custom-blue-btn:hover {
+    background-color: #043263; /* Color de fondo al pasar el cursor sobre el botón */
+    border-color: #043263; /* Color del borde al pasar el cursor sobre el botón */
+}
+
+        .texto-rojo-oscuro {
+    color: #091E3E; /* Este es un tono oscuro de rojo, puedes ajustarlo según tus preferencias */
+}
+
+        .zoomIn {
+            transition: transform 0.6s ease;
+            transform: scale(0.95);
+        }
+
+        .zoomIn:hover {
+            transform: scale(1);
+        }
 .btn-custom {
     background-image: linear-gradient(110deg, #028484 0%, #028484 50%, #02A5A5 50%, #02A5A5 100%);
     background-size: 200% 200%;
@@ -90,7 +131,9 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>CrediYape</h1>
+                <h1 class="m-0">
+                    <img src="./img/logo.png" alt="Logo" class="logo-img me-2" style="width: auto; height: 50px;">
+                </h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -117,7 +160,6 @@
                 <a href="#" class="btn btn-custom py-2 px-4 ms-3">Pedir una Cotización</a>
             </div>
         </nav>
-
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -125,8 +167,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">somos tu mejor opción</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Préstamos Prendarios & <span class="seguro-color">Seguros</span> Fáciles</h1>
-
+                            <h1 class="display-1 text-white mb-md-4 custom-zoomIn">Préstamos Prendarios & <span class="seguro-color">Seguros</span> Fáciles</h1>
                             <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft btn-custom">Cotización Gratis</a>
                             <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contáctanos</a>
                         </div>
@@ -137,24 +178,23 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Con Crediyape todo es</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Rápido, <span class="seguro-color">Seguro</span> & Confiable</h1>
+                            <h1 class="display-1 text-white mb-md-4 custom-zoomIn">Rápido, <span class="seguro-color">Seguro</span> & Confiable</h1>
                             <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft btn-custom">Cotización Gratis</a>
                             <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contáctanos</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
+        
         
     <!-- Navbar & Carousel End -->
 
@@ -185,7 +225,7 @@
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                     <div class="shadow d-flex align-items-center justify-content-center p-4" style="height: 150px; background-color: #043263;">
                         <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-primary"></i>
+                            <i class="fa fa-users" style="color:#043263;"></i>
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">Nuestros Clientes</h5>
@@ -195,11 +235,12 @@
                 </div>
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
                     <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                        <div class="d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px; background-color:#043263;">
                             <i class="fa fa-check text-white"></i>
                         </div>
+                        
                         <div class="ps-4">
-                            <h5 class="text-primary mb-0">Préstamos Realizados</h5>
+                            <h5 style="color: #043263; margin-bottom: 0;">Préstamos Realizados</h5>
                             <h1 class="mb-0" data-toggle="counter-up">4317</h1>
                         </div>
                     </div>
@@ -207,7 +248,7 @@
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
                     <div class="shadow d-flex align-items-center justify-content-center p-4" style="height: 150px; background-color: #043263;">
                         <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2 custom-button" style="width: 60px; height: 60px;">
-                            <i class="fa fa-award text-primary"></i>
+                            <i class="fa fa-award" style="color:  #043263;"></i>
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">Reconocimientos</h5>
@@ -215,13 +256,9 @@
                         </div>
                     </div>
                 </div>
-                
-                
             </div>
         </div>
     </div>
-    
-    
     <!-- Facts Start -->
 
 
@@ -254,8 +291,8 @@
                             <h4 class="text-primary mb-0">+51 922 733 902</h4>
                         </div>
                     </div>
-                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Solicitar presupuesto
-                    </a>
+                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn btn-custom" data-wow-delay="0.9s">Solicitar presupuesto</a>
+
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
@@ -393,13 +430,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn custom-blue-bg" data-wow-delay="0.9s">
+                    <div class="position-relative rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
                         <h3 class="text-white mb-3">Llámenos para cotizar</h3>
                         <p class="text-white mb-3">Préstamos rápidos y accesibles para inversiones personales o cualquier otra necesidad financiera.</p>
                         <h2 class="text-white mb-0">+51 922 733 902</h2>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -430,7 +468,8 @@
                             <div class="d-flex justify-content-between mb-3"><span>Lorem ipsum</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-3"><span>Lorem ipsum</span><i class="fa fa-times text-danger pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span>Lorem ipsum</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Obtener</a>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4 btn-custom">Obtener</a>
+
                         </div>
                     </div>
                 </div>
@@ -450,7 +489,8 @@
                             <div class="d-flex justify-content-between mb-3"><span>Lorem ipsum</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-3"><span>Lorem ipsum</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span>Lorem ipsum</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Obtener</a>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4 btn-custom">Obtener</a>
+
                         </div>
                     </div>
                 </div>
@@ -470,7 +510,8 @@
                             <div class="d-flex justify-content-between mb-3"><span>Lorem ipsum</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-3"><span>Lorem ipsum</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span>Lorem ipsum</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Obtener</a>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4 btn-custom">Obtener</a>
+
                         </div>
                     </div>
                 </div>
@@ -700,14 +741,17 @@
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
+        <div class="container" >
+            <div class="row gx-5" >
+                <div class="col-lg-4 col-md-6 footer-about" >
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                        <a href="index.html" class="navbar-brand">
-                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>CrediYape</h1>
+                        <a href="index.html" class="navbar-brand p-0">
+                            <h1 class="m-0">
+                                <img src="./img/logo2.png" alt="Logo" class="logo-img me-2" style="width: auto; height: 50px;">
+                            </h1>
                         </a>
-                        <p class="mt-3 mb-4">Siempre disponibles para responder a tus preguntas, resolver tus inquietudes y brindarte la asistencia que necesites en todo momento.</p>
+                        <p class="mt-3 mb-4 texto-rojo-oscuro">Siempre disponibles para responder a tus preguntas, resolver tus inquietudes y brindarte la asistencia que necesites en todo momento.</p>
+
                         <form action="">
                             <div class="input-group">
                                 <input type="text" class="form-control border-white p-3" placeholder="Correo">
@@ -786,7 +830,12 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-lg-square rounded back-to-top custom-blue-btn"><i class="bi bi-arrow-up"></i></a>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	<a href="https://wa.me/51922733902" class="btn-wsp" target="_blank">
+	    <i class="fa fa-whatsapp icono"></i>
 
 
     <!-- JavaScript Libraries -->
