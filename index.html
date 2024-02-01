@@ -29,6 +29,26 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .seguro-color {
+    color: #EDC44F;
+}
+
+.btn-custom {
+    background-image: linear-gradient(110deg, #028484 0%, #028484 50%, #02A5A5 50%, #02A5A5 100%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: background-position 0.7s, border-color 0.7s, color 0.7s;
+    border-color: #028484;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-position: left top;
+    border-color: #02A5A5;
+    color: white;
+}
+    </style>
 </head>
 
 <body>
@@ -94,29 +114,8 @@
                     <a href="#" class="nav-item nav-link">Contácto</a>
                 </div>
                 <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                <a href="#" class="btn btn-primary py-2 px-4 ms-3">Pedir una Cotización</a>
+                <a href="#" class="btn btn-custom py-2 px-4 ms-3">Pedir una Cotización</a>
             </div>
-            <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                    <a href="about.html" class="nav-item nav-link">Acerca</a>
-                    <a href="service.html" class="nav-item nav-link">Servicios</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Planes</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="price.html" class="dropdown-item">Plan de precios</a>
-                            <a href="feature.html" class="dropdown-item">Nosotros</a>
-                            <a href="team.html" class="dropdown-item">Equipo</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonios</a>
-                            <a href="quote.html" class="dropdown-item">Cotización Gratis
-                            </a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contácto</a>
-                </div>
-                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                <a href="#" class="btn btn-primary py-2 px-4 ms-3">Pedir una Cotización</a>
-            </div> -->
         </nav>
 
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -126,8 +125,9 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">somos tu mejor opción</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Préstamos Prendarios & Seguros Fáciles</h1>
-                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cotización Gratis</a>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Préstamos Prendarios & <span class="seguro-color">Seguros</span> Fáciles</h1>
+
+                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft btn-custom">Cotización Gratis</a>
                             <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contáctanos</a>
                         </div>
                     </div>
@@ -137,8 +137,8 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Con Crediyape todo es</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Rápido, Seguro & Confiable</h1>
-                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Cotización Gratis</a>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Rápido, <span class="seguro-color">Seguro</span> & Confiable</h1>
+                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft btn-custom">Cotización Gratis</a>
                             <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contáctanos</a>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                 <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
-    </div>
+        
     <!-- Navbar & Carousel End -->
 
 
@@ -183,7 +183,7 @@
         <div class="container py-5 pt-lg-0">
             <div class="row gx-0">
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                    <div class="shadow d-flex align-items-center justify-content-center p-4" style="height: 150px; background-color: #043263;">
                         <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
                             <i class="fa fa-users text-primary"></i>
                         </div>
@@ -205,8 +205,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                    <div class="shadow d-flex align-items-center justify-content-center p-4" style="height: 150px; background-color: #043263;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2 custom-button" style="width: 60px; height: 60px;">
                             <i class="fa fa-award text-primary"></i>
                         </div>
                         <div class="ps-4">
@@ -215,9 +215,13 @@
                         </div>
                     </div>
                 </div>
+                
+                
             </div>
         </div>
     </div>
+    
+    
     <!-- Facts Start -->
 
 
