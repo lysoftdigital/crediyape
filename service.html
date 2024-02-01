@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Startup - Startup Website Template</title>
+    <title>Credi-Yape | Casa de empeños y préstamos</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Credi-Yape | Casa de empeños y préstamos" name="keywords">
+    <meta content="Credi-Yape | Casa de empeños y préstamos" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/x-icon" href="./img/icono.ico">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -29,6 +30,61 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+@keyframes custom-zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+        .custom-blue-bg {
+    background-color: #043263; /* Puedes ajustar el tono de azul según tus preferencias */
+}
+
+        .custom-blue-btn {
+    background-color:#043263; /* Puedes ajustar el tono de azul según tus preferencias */
+    border-color:#043263; /* Color del borde */
+    color: white; /* Color del texto */
+}
+
+.custom-blue-btn:hover {
+    background-color: #043263; /* Color de fondo al pasar el cursor sobre el botón */
+    border-color: #043263; /* Color del borde al pasar el cursor sobre el botón */
+}
+
+        .texto-rojo-oscuro {
+    color: #091E3E; /* Este es un tono oscuro de rojo, puedes ajustarlo según tus preferencias */
+}
+
+        .zoomIn {
+            transition: transform 0.6s ease;
+            transform: scale(0.95);
+        }
+
+        .zoomIn:hover {
+            transform: scale(1);
+        }
+.btn-custom {
+    background-image: linear-gradient(110deg, #028484 0%, #028484 50%, #02A5A5 50%, #02A5A5 100%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: background-position 0.7s, border-color 0.7s, color 0.7s;
+    border-color: #028484;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-position: left top;
+    border-color: #02A5A5;
+    color: white;
+}
+    </style>
 </head>
 
 <body>
@@ -44,9 +100,12 @@
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i><a href="https://www.google.com/maps/place/Calle+Pedro+Silva+Gil+N%C2%B0+128+Etapa,+Urb.+Santa+Luzmila" target="_blank" style="color: white;">Calle Pedro Silva Gil N° 128 Etapa, Urb. Santa Luzmila</a></small>
+
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i><a href="https://wa.me/51922733902" target="_blank" style="color: white;">+51 922 733 902</a></small>
+                    
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i><a href="mailto:consulta@crediyape.com" target="_blank" style="color: white;">consulta@crediyape.com</a></small>
+                    
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
@@ -62,52 +121,37 @@
     </div>
     <!-- Topbar End -->
 
-
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+                <h1 class="m-0">
+                    <img src="./img/logo.png" alt="Logo" class="logo-img me-2" style="width: auto; height: 50px;">
+                </h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link active">Services</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                            <a href="feature.html" class="dropdown-item">Our features</a>
-                            <a href="team.html" class="dropdown-item">Team Members</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="./about.html" class="nav-item nav-link">Acerca</a>
+                    <a href="./service.html" class="nav-item nav-link active">Servicios</a>
+                    <a href="./price.html" class="nav-item nav-link">Precios</a>
+                    <a href="./contact.html" class="nav-item nav-link">Contácto</a>
                 </div>
                 <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a>
+                <a href="https://wa.me/51922733902" target="_blank" class="btn btn-custom py-2 px-4 ms-3">Pedir una Cotización</a>
             </div>
         </nav>
 
         <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
             <div class="row py-5">
                 <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">Services</h1>
-                    <a href="" class="h5 text-white">Home</a>
+                    <h1 class="display-4 text-white animated zoomIn">Acerca</h1>
+                    <a href="" class="h5 text-white">Préstamos</a>
                     <i class="far fa-circle text-white px-2"></i>
-                    <a href="" class="h5 text-white">Services</a>
+                    <a href="" class="h5 text-white">Empeños</a>
                 </div>
             </div>
         </div>
@@ -138,77 +182,84 @@
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
-                <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
+                <h5 class="fw-bold text-primary text-uppercase">Nuestros Servicios</h5>
+                <h1 class="mb-0">Soluciones de Préstamo personalizadas para su negocio
+                </h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
+                        <div class="service-icon bg-blue rounded-circle d-flex align-items-center justify-content-center" style="background-color: #028484;">
                             <i class="fa fa-shield-alt text-white"></i>
                         </div>
-                        <h4 class="mb-3">Cyber Security</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
+                        <h4 class="mb-3">Préstamos Personales</h4>
+                        <p class="m-0">Para necesidades diversas, como gastos médicos inesperados, reparaciones del hogar, </p>
+                        <a class="btn btn-lg btn-primary rounded" style="background-color: #072146;">
+                            <i class="bi bi-arrow-right" style="color: white;"></i>
                         </a>
                     </div>
+                    
+                    
+                    
                 </div>
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-chart-pie text-white"></i>
+                        <div class="service-icon bg-blue rounded-circle d-flex align-items-center justify-content-center" style="background-color: #028484;">
+                            <i class="bi bi-arrow-right" style="color: white;"></i>
                         </div>
-                        <h4 class="mb-3">Data Analytics</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
+                        <h4 class="mb-3">Empeño de Objetos de Valor</h4>
+                        <p class="m-0"> Empeño para joyas, relojes, electrónicos y otros objetos de valor.</p>
+                        <a class="btn btn-lg btn-primary rounded" style="background-color: #072146;">
+                            <i class="bi bi-arrow-right" style="color: white;"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
+                        <div class="service-icon bg-blue rounded-circle d-flex align-items-center justify-content-center" style="background-color: #028484;">
                             <i class="fa fa-code text-white"></i>
                         </div>
-                        <h4 class="mb-3">Web Development</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
+                        <h4 class="mb-3">Préstamos para Negocios</h4>
+                        <p class="m-0">Brindar financiamiento a pequeñas empresas y emprendedores.</p>
+                        <a class="btn btn-lg btn-primary rounded" style="background-color: #072146;">
+                            <i class="bi bi-arrow-right" style="color: white;"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
+                        <div class="service-icon bg-blue rounded-circle d-flex align-items-center justify-content-center" style="background-color: #028484;">
                             <i class="fab fa-android text-white"></i>
                         </div>
-                        <h4 class="mb-3">Apps Development</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
+                        <h4 class="mb-3">Garantía Hipotecaria</h4>
+                        <p class="m-0">Ofrecemos préstamos respaldados por propiedades inmobiliaria.</p>
+                        <a class="btn btn-lg btn-primary rounded" style="background-color: #072146;">
+                            <i class="bi bi-arrow-right" style="color: white;"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
+                        <div class="service-icon bg-blue rounded-circle d-flex align-items-center justify-content-center" style="background-color: #028484;">
                             <i class="fa fa-search text-white"></i>
                         </div>
-                        <h4 class="mb-3">SEO Optimization</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
+                        <h4 class="mb-3">Transferencias de Dinero</h4>
+                        <p class="m-0">Facilitar el envío transferencias a nivel nacional e internacional.</p>
+                        <a class="btn btn-lg btn-primary rounded" style="background-color: #072146;">
+                            <i class="bi bi-arrow-right" style="color: white;"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-                        <h3 class="text-white mb-3">Call Us For Quote</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
-                        <h2 class="text-white mb-0">+012 345 6789</h2>
+                <div class="col-lg-4 col-md-6 wow zoomIn custom-blue-bg" data-wow-delay="0.9s">
+                    <div class="position-relative rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+                        <h3 class="text-white mb-3">Llámenos para cotizar</h3>
+                        <p class="text-white mb-3">Préstamos rápidos y accesibles para inversiones personales o cualquier otra necesidad financiera.</p>
+                        <h2 class="mb-0" style="color: #f8cd51;">+51 922 733 902</h2>
                     </div>
                 </div>
+                
+                
+                
             </div>
         </div>
     </div>
@@ -219,16 +270,16 @@
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
-                <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
+                <h5 class="fw-bold text-primary text-uppercase">Testimonios</h5>
+                <h1 class="mb-0">Nuestros Clientes Sobre los Servicios que Ofrecemos</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
                 <div class="testimonial-item bg-light my-4">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
+                            <h4 class="text-primary mb-1">Sandra Romero</h4>
+                            <small class="text-uppercase">Psicologa</small>
                         </div>
                     </div>
                     <div class="pt-4 pb-5 px-5">
@@ -239,8 +290,8 @@
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
+                            <h4 class="text-primary mb-1">Pedro Dueñas</h4>
+                            <small class="text-uppercase">Ingeniero</small>
                         </div>
                     </div>
                     <div class="pt-4 pb-5 px-5">
@@ -251,8 +302,8 @@
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
+                            <h4 class="text-primary mb-1">Alex Loayza</h4>
+                            <small class="text-uppercase">Artista</small>
                         </div>
                     </div>
                     <div class="pt-4 pb-5 px-5">
@@ -263,8 +314,8 @@
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
+                            <h4 class="text-primary mb-1">Beatriz Ayala</h4>
+                            <small class="text-uppercase">Cantante</small>
                         </div>
                     </div>
                     <div class="pt-4 pb-5 px-5">
@@ -300,18 +351,21 @@
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
+        <div class="container" >
+            <div class="row gx-5" >
+                <div class="col-lg-4 col-md-6 footer-about" >
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                        <a href="index.html" class="navbar-brand">
-                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+                        <a href="index.html" class="navbar-brand p-0">
+                            <h1 class="m-0">
+                                <img src="./img/logo2.png" alt="Logo" class="logo-img me-2" style="width: auto; height: 50px;">
+                            </h1>
                         </a>
-                        <p class="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
+                        <p class="mt-3 mb-4 texto-rojo-oscuro">Siempre disponibles para responder a tus preguntas, resolver tus inquietudes y brindarte la asistencia que necesites en todo momento.</p>
+
                         <form action="">
                             <div class="input-group">
-                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                                <button class="btn btn-dark">Sign Up</button>
+                                <input type="text" class="form-control border-white p-3" placeholder="Correo">
+                                <button class="btn btn-dark">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -320,19 +374,19 @@
                     <div class="row gx-5">
                         <div class="col-lg-4 col-md-12 pt-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Get In Touch</h3>
+                                <h3 class="text-light mb-0">Contacto</h3>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">123 Street, New York, USA</p>
+                                <p class="mb-0">Calle Pedro Silva Gil N° 128 Etapa, Urb. Santa Luzmila</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">consulta@crediyape.com</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+012 345 67890</p>
+                                <p class="mb-0">+51 922 733 902                                </p>
                             </div>
                             <div class="d-flex mt-4">
                                 <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
@@ -343,28 +397,26 @@
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Quick Links</h3>
+                                <h3 class="text-light mb-0">Enlaces Rápidos                                </h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                <a class="text-light mb-2" href="./index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
+                                <a class="text-light mb-2" href="./about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Acerca</a>
+                                <a class="text-light mb-2" href="./service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Servicios</a>
+                                <a class="text-light mb-2" href="/about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Equipo</a>
+                                <a class="text-light" href="./contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contácto</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
+                                <h3 class="text-light mb-0">Enlaces Populares</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                <a class="text-light mb-2" href="./index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
+                                <a class="text-light mb-2" href="./about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Acerca</a>
+                                <a class="text-light mb-2" href="./service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Servicios</a>
+                                <a class="text-light mb-2" href="/about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Equipo</a>
+                                <a class="text-light" href="./contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contácto</a>
                             </div>
                         </div>
                     </div>
@@ -377,10 +429,8 @@
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved. 
-						
-						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">CrediYape S.A. </a> Todos los Derechos Reservados © 2024 -
+						Desarrollado por <a class="text-white border-bottom" href="https://lysoftdigital.vercel.app/" target="_blank">Lysoft Digital</a></p>
                     </div>
                 </div>
             </div>
@@ -390,8 +440,12 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" class="btn btn-lg btn-lg-square rounded back-to-top custom-blue-btn"><i class="bi bi-arrow-up"></i></a>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	<a href="https://wa.me/51922733902" class="btn-wsp" target="_blank">
+	    <i class="fa fa-whatsapp icono"></i>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
